@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dental Room | Book Your Consultation</title>
+  <!-- Google Fonts for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://images1-fabric.practo.com/practices/1176875/the-dental-room-hyderabad-5aaa6fffb07a5.png" alt="The Dental Room" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#booking">Book Now</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#booking" class="btn primary-btn">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>The Dental Room</h1>
+        <p class="tagline">Multi-speciality Clinic</p>
+        <p class="trusted">Trusted by thousands for quality dental care</p>
+        <p class="ratings">
+          Rating: 5.0 (Practo) | 4.6 (Google) <span class="votes">(145 votes | 118 reviews)</span>
+        </p>
+        <p class="location">Tolichowki, Hyderabad</p>
+        <p class="address">
+          Lane, Sabza Colony Rd, beside Reliance Mart, beside Old Reliance mart, Sabza Colony, Brindavan Colony, Toli Chowki, Hyderabad, Telangana 500008, India
+        </p>
+        <a href="#booking" class="btn primary-btn">Secure Your Slot Today</a>
+        <p class="secure-note">Secure &amp; Confidential Appointment Booking</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section (Topmate‑Style) -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <h2>Choose Your Consultation</h2>
+      <div class="booking-options">
+        <div class="option-card">
+          <h3>Virtual Consultation</h3>
+          <p class="price">₹200/-</p>
+          <p class="desc">Consult with our expert dentist via video call from your home.</p>
+          <p class="slot-note">Limited slots available</p>
+          <button class="btn book-btn">Book Virtual Consultation</button>
+        </div>
+        <div class="option-card">
+          <h3>Clinic Visit</h3>
+          <p class="price">₹400/-</p>
+          <p class="desc">Visit our clinic for a comprehensive dental check-up.</p>
+          <p class="slot-note">Book your slot today</p>
+          <button class="btn book-btn">Book Clinic Visit</button>
+        </div>
+        <div class="option-card">
+          <h3>Quarterly Subscription</h3>
+          <p class="price">₹2,000/-</p>
+          <p class="desc">Enjoy multiple virtual consultations over a quarter at a discounted rate.</p>
+          <p class="slot-note">Subscribe now for exclusive benefits</p>
+          <button class="btn book-btn">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section id="doctors" class="doctors-section">
+    <div class="container">
+      <h2>Our Doctors</h2>
+      <div class="doctor-cards">
+        <div class="doctor-card">
+          <img src="https://imagesx.practo.com/providers/dr-md-safiuddin-quraishi-orthodontist-hyderabad-22c1c967-b937-44f1-8108-b4000b7ffc53.jpg?i_type=t_70x70" alt="Dr. Md Safiuddin Quraishi">
+          <h3>Dr. Md Safiuddin Quraishi <span class="verified">✓ Verified</span></h3>
+          <p class="qualification">BDS, MDS – Orthodontics and Dentofacial Orthopaedics</p>
+          <p class="experience">12 years experience overall</p>
+          <p class="specializations"><strong>Specializations:</strong> Orthodontist, Implantologist</p>
+          <p class="wait">Wait Time: Max. 15 mins + Verified details</p>
+          <p class="fee">Consultation Fee: ₹300</p>
+          <p class="visit">Visit: Mon-Sat, 10:00 AM – 8:00 PM</p>
+        </div>
+        <div class="doctor-card">
+          <img src="https://imagesx.practo.com/providers/dr-sana-fatima-cosmetic-aesthetic-dentist-hyderabad-b24bbcd6-4973-47d1-a5c0-28346a5c9406.jpg?i_type=t_70x70" alt="Dr. Sana Fatima">
+          <h3>Dr. Sana Fatima <span class="verified">✓ Verified</span></h3>
+          <p class="qualification">BDS</p>
+          <p class="experience">9 years experience overall</p>
+          <p class="specializations"><strong>Specializations:</strong> Cosmetic/Aesthetic Dentist, Dental Surgeon, Dentist</p>
+          <p class="wait">Wait Time: Verified details</p>
+          <p class="fee">Consultation Fee: ₹300</p>
+          <p class="visit">Visit: Mon-Sat, 10:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2>Clinic Gallery</h2>
+      <div class="gallery-grid">
+        <!-- Large photos using Google Place Photo API -->
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1152&photoreference=AVzFdblgTxYoMN2HAzfuyyAhvVp7W7nSXea9NSd899mUjwjVecofIOyRe4jW68O7rAGWZHdy3XbqnFfCIBUNWCQogcX7WXwSWqf6a2KTQwmqCgrIRpqt_v9mKXGYDalgIlM_tDRt59HHE8cRMODZvAqdtMPekTiycIPSdGUDuLnXmdexj_PG&key=YOUR_API_KEY" alt="Gallery Image 1">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1152&photoreference=AVzFdbme1NJr2EMEg2kmbNDN-FaxrUNx4-9B7AK4UWw_BmkZNeTYcwlnerS46JZFN02lsnq2hI1n9I6t8QFYJyVML1CjUJROH8KOyM-w-N8zHY-fKPwrgwRHXtCieZzlxSUar0p6ZNCi4RURpJnOU3BNvYJY5hdxARaxhpOiFa4cOs-qErd9&key=YOUR_API_KEY" alt="Gallery Image 2">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1152&photoreference=AVzFdbmDMHd1fh81_A4GTnqdo-WzK9iDy6APz-XzJzRyccJDbcsbTGwEKNrBJOpkiD1M3fGXtClkpPLKPQzgVyJdAQqm5hdyJ99BWC0veMlXx2wXFEBzTzayCYigfaA446rrFYOqlWp835oHYc92W-N9HQGG58wsnf3SVimU8xs0-qTnZICU&key=YOUR_API_KEY" alt="Gallery Image 3">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1152&photoreference=AVzFdbmdMU8RErDCuQC1AQtDTvuPLKZVKH4lSacbCAhGji8m1mBmu98aQIYTv9C9O9vG92bOSvh5OIY7j8ydK0d7ZPaQ4db1PWrUQAGN1mqYfwgwml8X2814QVXCSul_LZed3PBXP_iGeKbMnJt-63e4hXdz3yhgU2tvu1qVBh-zUyVLCzC-&key=YOUR_API_KEY" alt="Gallery Image 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2>Patient Stories</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <h4>Syed – 4 years ago</h4>
+          <p><strong>Visited For:</strong> RCT, Dental Crowns, Scaling/Polishing, Dental Fillings, Teeth Reshaping</p>
+          <p class="feedback">What matters to a person in pain is immediate help. I remember it was Eid and my tooth was throbbing...</p>
+        </div>
+        <div class="testimonial">
+          <h4>Pankaj Kumar – 5 years ago</h4>
+          <p><strong>Visited For:</strong> Dental Implant Fixing</p>
+          <p class="feedback">Thank you, Dr. Safi Quraishi, for your exceptional care and expertise...</p>
+        </div>
+        <div class="testimonial">
+          <h4>Michael – 5 years ago</h4>
+          <p><strong>Visited For:</strong> Wisdom Tooth Extraction</p>
+          <p class="feedback">The procedure was efficient and caring. Highly recommended...</p>
+        </div>
+        <div class="testimonial">
+          <h4>Yauwan Pradhan – 3 years ago</h4>
+          <p><strong>Visited For:</strong> Implants (Fixed Teeth)</p>
+          <p class="feedback">After a lengthy treatment, my smile is back. I highly recommend their services...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-orthodontic-treatment" target="_blank">Orthodontic Treatment</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-invisible-orthodontics" target="_blank">Invisible Orthodontics</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-jaw-orthopedics" target="_blank">Jaw Orthopedics</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-presurgical-orthodontics" target="_blank">Presurgical Orthodontics</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-invisible-clear-braces" target="_blank">Invisible/Clear Braces</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-metal-braces-fixing" target="_blank">Metal Braces Fixing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-dental-braces-fixing" target="_blank">Dental Braces Fixing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-braces-adjustment" target="_blank">Braces Adjustment</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctor-for-straightening-teeth-conventional-braces" target="_blank">Straightening Teeth (Conventional Braces)</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-bleeding-gums-treatment" target="_blank">Bleeding Gums Treatment</a></li>
+        <li><a href="#">Clear Aligners</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-gap-closing" target="_blank">Gap Closing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-implant-retained-dentures" target="_blank">Implant Retained Dentures</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-inlays-and-onlays" target="_blank">Inlays and Onlays</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-oral-rehabilitation" target="_blank">Oral Rehabilitation</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-implant-prosthesis" target="_blank">Implant Prosthesis</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-dental-prophylaxis" target="_blank">Dental Prophylaxis</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-oral-surgery-procedures" target="_blank">Oral Surgery Procedures</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-straightening-teeth-invisalign" target="_blank">Straightening Teeth (Invisalign)</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-osseointegrated-implants" target="_blank">Osseointegrated Implants</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-preparation-for-dentures" target="_blank">Preparation for Dentures</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-implant-rehabilitation" target="_blank">Implant Rehabilitation</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-dental-implant-fixing" target="_blank">Dental Implant Fixing</a></li>
+        <li><a href="#">Root Canal Therapy</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-crowns-and-bridges-fixing" target="_blank">Crowns and Bridges Fixing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/surgeons-for-zirconia-crowns" target="_blank">Zirconia Crowns</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-ceramic-crowns-and-bridges-fixing" target="_blank">Ceramic Crowns and Bridges Fixing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-scaling-polishing" target="_blank">Scaling / Polishing</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-teeth-jewellery" target="_blank">Teeth – Jewellery</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-teeth-whitening" target="_blank">Teeth Whitening</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctor-for-porcelain-inlays-and-onlays" target="_blank">Porcelain Inlays and Onlays</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-full-denture-acrylic" target="_blank">Full Denture (Acrylic)</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctor-for-retention-implant-dentures" target="_blank">Retention Implant Dentures</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctor-for-partial-denture-metal-based" target="_blank">Partial Denture (Metal Based)</a></li>
+        <li><a href="#">Removable Dentures</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-tooth-extraction" target="_blank">Tooth Extraction</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-surgical-tooth-extraction" target="_blank">Surgical Tooth Extraction</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-wisdom-tooth-extraction" target="_blank">Wisdom Tooth Extraction</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-dental-examinations" target="_blank">Dental Examinations</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-mouth-guard" target="_blank">Mouth Guard</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-smile-design" target="_blank">Smile Design</a></li>
+        <li><a href="https://www.practo.com/hyderabad/doctors-for-dental-x-ray" target="_blank">Dental X-Ray</a></li>
+        <li><a href="#">GIC Filling</a></li>
+        <li><a href="#">Composite Fillings</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-items">
+        <div class="faq-item">
+          <h4>Q: Is there a pharmacy/diagnostic/imaging service at the clinic?</h4>
+          <p>A: The clinic offers dental imaging services.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: How many patients can be seated in the waiting area?</h4>
+          <p>A: Approximately 9-10 patients can be accommodated at a time.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: What digital payment modes are accepted?</h4>
+          <p>A: Paytm and Google Pay are accepted.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: Do I need an appointment before visiting?</h4>
+          <p>A: Yes, appointments are required to ensure timely consultation.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: What is the follow-up consultation fee and duration?</h4>
+          <p>A: The follow-up fee is ₹200; duration depends on the treatment.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: Is the clinic wheelchair accessible?</h4>
+          <p>A: No, the clinic does not have a wheelchair accessible entrance.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: How can I book an appointment?</h4>
+          <p>A: Appointments can be booked online through our website or Practo.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: What specialties do your doctors offer?</h4>
+          <p>A: Our doctors specialize in general dentistry, orthodontics, cosmetic dentistry, and more.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: What are the clinic timings?</h4>
+          <p>A: Monday to Saturday: 10:00 AM – 8:00 PM; Sunday: Closed.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Q: Where is the clinic located?</h4>
+          <p>A: The clinic is located at Lane, Sabza Colony Rd, beside Reliance Mart, beside Old Reliance mart, Sabza Colony, Brindavan Colony, Toli Chowki, Hyderabad, Telangana 500008, India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact & Hours</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <h4>Address</h4>
+          <p>Lane, Sabza Colony Rd, beside Reliance Mart, beside Old Reliance mart, Sabza Colony, Brindavan Colony, Toli Chowki, Hyderabad, Telangana 500008, India</p>
+        </div>
+        <div class="contact-item">
+          <h4>Phone</h4>
+          <p><a href="tel:+918142949594">+91 81429 49594</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>Website</h4>
+          <p><a href="http://www.thedentalroom.in/" target="_blank">www.thedentalroom.in</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>Status</h4>
+          <p>Operational</p>
+        </div>
+      </div>
+      <div class="opening-hours">
+        <h3>Opening Hours</h3>
+        <ul class="hours-list">
+          <li>Monday: 10:00 AM – 8:00 PM</li>
+          <li>Tuesday: 10:00 AM – 8:00 PM</li>
+          <li>Wednesday: 10:00 AM – 8:00 PM</li>
+          <li>Thursday: 10:00 AM – 8:00 PM</li>
+          <li>Friday: 10:00 AM – 8:00 PM</li>
+          <li>Saturday: 10:00 AM – 8:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <p class="trust-note">Your details are 100% secure and confidential.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 The Dental Room. All rights reserved.</p>
+      <a href="tel:+918142949594" class="btn call-btn">Call Now</a>
+    </div>
+  </footer>
+</body>
+</html>
