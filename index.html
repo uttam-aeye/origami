@@ -15,7 +15,8 @@
       <div class="logo">
         <img src="https://images1-fabric.practo.com/practices/1176875/the-dental-room-hyderabad-5aaa6fffb07a5.png" alt="The Dental Room" />
       </div>
-      <nav>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#booking">Book Now</a></li>
@@ -27,9 +28,33 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#booking" class="btn primary-btn">Book Now</a>
+      <a href="#booking" class="btn primary-btn desktop-book-btn">Book Now</a>
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
+
+  <!-- Mobile Navigation Sidebar -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <h2>Menu</h2>
+      <button class="close-btn" id="close-btn">&times;</button>
+    </div>
+    <ul>
+      <li><a href="#hero" class="mobile-link">Home</a></li>
+      <li><a href="#booking" class="mobile-link">Book Now</a></li>
+      <li><a href="#doctors" class="mobile-link">Doctors</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
@@ -158,6 +183,7 @@
     <div class="container">
       <h2>Our Services</h2>
       <ul class="services-list">
+        <!-- List all services as before -->
         <li><a href="https://www.practo.com/hyderabad/doctors-for-orthodontic-treatment" target="_blank">Orthodontic Treatment</a></li>
         <li><a href="https://www.practo.com/hyderabad/doctors-for-invisible-orthodontics" target="_blank">Invisible Orthodontics</a></li>
         <li><a href="https://www.practo.com/hyderabad/doctors-for-jaw-orthopedics" target="_blank">Jaw Orthopedics</a></li>
@@ -237,7 +263,7 @@
         </div>
         <div class="faq-item">
           <h4>Q: How can I book an appointment?</h4>
-          <p>A: Appointments can be booked online through our website or Practo.</p>
+          <p>A: Appointments can be booked online through our website or via Practo.</p>
         </div>
         <div class="faq-item">
           <h4>Q: What specialties do your doctors offer?</h4>
@@ -300,5 +326,28 @@
       <a href="tel:+918142949594" class="btn call-btn">Call Now</a>
     </div>
   </footer>
+
+  <!-- Mobile Nav Toggle Script -->
+  <script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+    });
+
+    // Close mobile nav when a link is clicked
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>
